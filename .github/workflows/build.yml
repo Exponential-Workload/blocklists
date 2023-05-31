@@ -43,6 +43,7 @@ jobs:
         run: |
           rm -rf .github
           curl -o ../create-index https://exponential-workload.github.io/create-index-bin/out/index-linux
+          chmod +x ../create-index
           ../create-index build .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
