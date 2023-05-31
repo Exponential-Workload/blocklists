@@ -35,10 +35,6 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Concat all blocklists
         run: cat prefix.sh lists/*.sh > all.sh
-      - name: Move blocklists
-        run: cp -r lists/*.sh ./
-      - name: rmdir lists
-        run: rmdir lists
       - name: Create Indexes
         run: |
           rm -rf .github
