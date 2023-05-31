@@ -1,4 +1,4 @@
-# lists/censys.sh
+# lists/censys.sh | Censys
 # ip list source: https://support.censys.io/hc/en-us/articles/360043177092-Opt-Out-of-Data-Collection
 # what is censys: "Censys is a platform that helps information security practitioners discover, monitor, and analyze devices that are accessible from the Internet. It is used to identify Internet connected assets and Internet of Things/Industrial Internet of Things (IoT/IIoT), but also Internet-connected industrial control systems and platforms1. Censys regularly probes every public IP address and popular domain names, curates and enriches the resulting data, and makes it intelligible through an interactive search engine and API."
 # why is it blocked: It scans random IPs, and tries to link them to domains, to expose your proxied service's origin. There is no reason to trust it connecting to your device.

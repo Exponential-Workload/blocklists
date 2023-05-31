@@ -1,4 +1,4 @@
-# lists/shodan.sh
+# lists/shodan.sh | Shodan
 # ip list source: https://github.com/SilvrrGIT/IP-Lists/blob/master/shodan | https://wiki.ipfire.org/configuration/firewall/blockshodan
 # what is shodan: "Shodan is a search engine which does not index web sites or web contents, but vulnerable devices on the internet. To set up this index and to keep it up to date, Shodan uses at least 16 scanners with different AS numbers and different physical locations."
 # why is it blocked: I don't see any reason you want your device to be part of a publicly accessible list of vulnerable devices.
