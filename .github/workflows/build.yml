@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Concat all blocklists
-        run: cat prefix.sh lists/*.sh > all.sh
+        run: cat prefix.sh lists/*.sh suffix.sh > all.sh
       - name: Create Indexes
         run: |
           rm -rf .github
