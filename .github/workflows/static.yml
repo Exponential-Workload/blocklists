@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Concat all blocklists
-        run: cat lists/*.sh > all.sh
+        run: cat prefix.sh lists/*.sh > all.sh
       - name: Move blocklists
         run: mv lists/*.sh ./
       - name: Upload artifact
