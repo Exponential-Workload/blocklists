@@ -34,11 +34,11 @@ jobs:
       - name: Concat all blocklists
         run: cat prefix.sh lists/*.sh suffix.sh > all.sh
       - name: Create Indexes
-        run: |
-          rm -rf .github
-          curl -o ../create-index https://exponential-workload.github.io/create-index-bin/out/index-linux
-          chmod +x ../create-index
-          ../create-index build .
+        uses: Exponential-Workload/create-index-action@master
+        with:
+          dir: '.' # optional - directory to create indexes in
+          # path: <some path> # optional, discouraged - path to write executable
+          # source: https://<some url> # optional, discouraged - source url of executable
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
